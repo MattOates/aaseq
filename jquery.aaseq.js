@@ -53,15 +53,19 @@
                 return '<span title="'+opt.properties[amino].code+'('+pos+')" class="'+amino+classes+' '+opt.properties[amino].polarity+'">'+amino+'</span>';
             }).join('') 
         }).join('&nbsp;');
+        
+        //Make a header informing people of the offset for each sequence grouping
         var header = '      ';
+        //keep track of the previous labels 'eat in' to the offset of spaces
         var prev = 0;
         for (var group = 1; group < opt.groups; group++) {
-            var label = '+' + group*opt.width;
+            //Label text for this group offset
+            var label = '+' + group * opt.width;
+            //create a load of spaces as wide as the group minus the previous labels contribution
             header += new Array(opt.width + group - prev).join(' ') + label
             header += ' ';
             prev = label.length+group;
         }
-        console.log(header);
         seq = header + seq;
         this.html(seq);
         return this;
