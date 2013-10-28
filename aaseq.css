@@ -1,0 +1,31 @@
+.R, .K {
+    color:red;
+}
+
+.D, .E {
+    color:magenta;
+}
+
+.S, .T, .N, .Q {
+    color:green;
+}
+
+.C, .U, .G {
+    color:orange;
+}
+
+.P {
+    color:gold;
+}
+
+.H, .Y {
+    color:cyan;
+}
+
+.A, .I, .L, .M, .F, .W, .V {
+    color:blue;
+}
+
+.disorder {
+    background-color:#bbb;
+}
