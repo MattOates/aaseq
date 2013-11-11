@@ -1,3 +1,28 @@
+@font-face {
+    font-family: 'twenty-characters';
+    src: url('font/twenty-characters.eot');
+    src: url('font/twenty-characters.eot?#iefix') format('embedded-opentype'),
+         url('font/twenty-characters.woff') format('woff'),
+         url('font/twenty-characters.ttf') format('truetype'),
+         url('font/twenty-characters.svg#twentycharactersbook') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+.aaheader {
+
+}
+
+.aa {
+    display:inline-block;
+    width:1em;
+    font-family: 'twenty-characters';
+    text-align:center;
+    cursor:pointer;
+}
+
 .R, .K {
     color:red;
 }

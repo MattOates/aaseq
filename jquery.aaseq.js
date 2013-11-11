@@ -2,8 +2,8 @@
     
     $.fn.aaseq = function(opt) {
         defaults = {
-            groups: 5,
-            width: 10,
+            groups: 4,
+            width: 5,
             properties: {
                 A: {name:'Alanine',code:'Ala',polarity:'nonpolar',charge:'neutral'},     
                 R: {name:'Arginine',code:'Arg',polarity:'basic-polar',charge:'positive'},        
@@ -50,7 +50,7 @@
                     }
                 }
                 //Output the amino acid with a surrounding span loaded with all the classes and the sequence position as a title
-                return '<span title="'+opt.properties[amino].code+'('+pos+')" class="'+amino+classes+' '+opt.properties[amino].polarity+'">'+amino+'</span>';
+                return '<span title="'+opt.properties[amino].code+'('+pos+')" class="aa '+amino+classes+' '+opt.properties[amino].polarity+'">'+amino+'</span>';
             }).join('') 
         }).join('&nbsp;');
         
