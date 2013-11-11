@@ -10,17 +10,29 @@
 
 }
 
-
-.aaheader {
-
-}
-
 .aa {
     display:inline-block;
     width:1em;
     font-family: 'twenty-characters';
     text-align:center;
     cursor:pointer;
+    font-size: 100%;
+    border: none;
+}
+
+.aa:hover {
+    font-family: 'courier';
+}
+
+.aminos .aa:hover {
+    font-size: 130%;
+    border: 1px solid;
+    border-radius: 5px;
+}
+
+.disorder {
+    font-style:italic;
+    font-weight:bolder;
 }
 
 .R, .K {
@@ -51,6 +63,3 @@
     color:blue;
 }
 
-.disorder {
-    background-color:#bbb;
-}

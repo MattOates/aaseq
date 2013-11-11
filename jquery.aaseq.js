@@ -34,7 +34,7 @@
             }
         }; 
         opt = $.extend(defaults,opt);
-        var seq = this.text().split(new RegExp('(.{'+opt.width+'})','g')).filter(Boolean).map(function(groupseq,group){
+        var seq = this.text().replace(/\s/g,"").split(new RegExp('(.{'+opt.width+'})','g')).filter(Boolean).map(function(groupseq,group){
             return (group % opt.groups ? '' : '\n' + '    '.slice(-2+(''+1+group*opt.width).length) + (1+group*opt.width) + ' ') + groupseq.split(/(.{1})/g).filter(Boolean).map(function(amino,offset){
                 var pos = 1+group*opt.width+offset;
                 var classes = '';
@@ -66,7 +66,7 @@
             header += ' ';
             prev = label.length+group;
         }
-        seq = header + seq;
+        //seq = header + seq;
         this.html(seq);
         return this;
     };
