@@ -35,6 +35,14 @@
     font-weight:bolder;
 }
 
+.positive {}
+.negative {}
+.neutral {}
+
+.polar {}
+.basic-polar {}
+.nonpolar {}
+
 .R, .K {
     color:red;
 }

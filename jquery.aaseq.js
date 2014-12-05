@@ -24,7 +24,7 @@
                 T: {name:'Threonine',code:'Thr',polarity:'polar',charge:'neutral'},        
                 W: {name:'Tryptophan',code:'Trp',polarity:'nonpolar',charge:'neutral'},
                 Y: {name:'Tyrosine',code:'Tyr',polarity:'polar',charge:'neutral'},
-                V: {name:'Valine',code:'Val',polar:'nonpolar',charge:'neutral'},
+                V: {name:'Valine',code:'Val',polarity:'nonpolar',charge:'neutral'},
                 U: {name:'Selenocysteine',code:'Sec'},
                 O: {name:'Pyrrolysine',code:'Pyl'},
                 B: {name:'Asparagine or aspartic acid',code:'Asx'},
